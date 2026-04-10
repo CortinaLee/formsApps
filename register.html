@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Account Registration</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="styles/register.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="scripts/registerjquery.js"
+            defer
+        ></script>
+    </head>
+    <body>
+        <main class="calculator-card">
+            <h1>Register Account</h1>
+            <form
+                action="register_account.html"
+                id="registration_form"
+                name="registration_form"
+                method="get"
+            >
+                <div class="input-group">
+                    <label for="email_address">E-Mail Address</label>
+                    <input
+                        type="text"
+                        name="email_address"
+                        id="email_address"
+                        placeholder="example@mail.com"
+                    />
+                    <span id="email_error" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Mobile Phone</label>
+                    <input
+                        type="text"
+                        name="phone"
+                        id="phone"
+                        placeholder="123-456-7890"
+                    />
+                    <span id="phone_error" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="">Select an option</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Mexico">Mexico</option>
+                    </select>
+                    <span id="country_error" class="error-msg"></span>
+                </div>
+
+                <div class="input-group">
+                    <label>Contact me by:</label>
+                    <div class="options-row">
+                        <input
+                            type="radio"
+                            name="contact"
+                            id="contact_text"
+                            value="text"
+                            checked
+                        />
+                        <label for="contact_text" class="inline-label"
+                            >Text</label
+                        >
+
+                        <input
+                            type="radio"
+                            name="contact"
+                            id="contact_email"
+                            value="email"
+                        />
+                        <label for="contact_email" class="inline-label"
+                            >Email</label
+                        >
+
+                        <input
+                            type="radio"
+                            name="contact"
+                            id="contact_phone"
+                            value="phone"
+                        />
+                        <label for="contact_phone" class="inline-label"
+                            >Phone</label
+                        >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="options-row">
+                        <input
+                            type="checkbox"
+                            name="terms"
+                            id="terms"
+                            value="yes"
+                        />
+                        <label for="terms" class="inline-label"
+                            >I accept the Terms of Service</label
+                        >
+                    </div>
+                    <span id="terms_error" class="error-msg"></span>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="register">Register</button>
+                    <button type="button" id="reset_form" class="secondary-btn">
+                        Reset
+                    </button>
+                </div>
+            </form>
+
+            <hr />
+            <p class="footer-text">
+                Thanks for using our registration service.
+            </p>
+            <a href="https://cortinalee.github.io/formsApps/" class="back-menu"
+                >Back to main menu</a
+            >
+        </main>
+    </body>
+</html>
